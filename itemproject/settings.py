@@ -26,7 +26,7 @@ import dj_database_url
 SECRET_KEY = os.environ.get('SECRET_KEY', default='localkey2022')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DDEBUG = 'RENDER' not in os.environ
+DEBUG = 'RENDER' not in os.environ
 
 ALLOWED_HOSTS = []
 
@@ -60,7 +60,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-CORS_ALLOWED_ORIGINS= True #corsheaders
+CORS_ALLOW_ALL_ORIGINS= True #corsheaders
 
 ROOT_URLCONF = 'itemproject.urls'
 
